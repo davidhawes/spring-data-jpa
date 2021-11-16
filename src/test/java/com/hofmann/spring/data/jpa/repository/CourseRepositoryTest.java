@@ -1,6 +1,7 @@
 package com.hofmann.spring.data.jpa.repository;
 
 import com.hofmann.spring.data.jpa.entity.Course;
+import com.hofmann.spring.data.jpa.entity.Teacher;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,5 +23,23 @@ class CourseRepositoryTest {
 
         System.out.println("courses = " + courses);
     }
+
+    @Test
+    public void saveCourseWithTeacher(){
+
+        Teacher teacher = Teacher.builder()
+                .firstName("LEHEREER")
+                .lastName("NACHNAME")
+                .build();
+
+        Course course = Course.builder()
+                .title("python")
+                .credit(6)
+                .teacher(teacher)
+                .build();
+
+        courseRepository.save(course);
+    }
+
 
 }
