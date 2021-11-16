@@ -1,1 +1,1 @@
-# Spring Data JÜA
+# Spring Data JPA
