@@ -17,3 +17,4 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 
     List<Student> findByGuardianName(String guardianName);
 }
+
