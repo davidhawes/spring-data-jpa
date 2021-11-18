@@ -123,6 +123,7 @@ Ausgabe
 ### Entity Teacher
 
 1. Eine Entity kann mehrere Kurse haben (@OneToMany) 
+
 ![image](https://user-images.githubusercontent.com/83290245/142078020-f6bd128b-6a53-4ebe-9a7d-31d42b165495.png)
 
 2. Viele Kurse können einen Teacher haben (@ManyToOne)
